@@ -1,3 +1,4 @@
+
 Weather Application
 Description:
 To build a weather application for China cities, and user can search the weather information by city name. The weather information should be displayed with user-friendly web UI.
@@ -16,5 +17,6 @@ Nice to Have (optional):
 Show:
 
 Result:
+
 
 Link: 汇丰银行全栈开发面试-天气小应用项目_哔哩哔哩_bilibili
