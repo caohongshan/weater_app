@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+</head>
+<body>
+<h1>天气应用</h1>
+<form method="post" action="/get_weather">
+    <input type="text" name="city" placeholder="输入城市名称">
+    <button type="submit">查询天气</button>
+</form>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    {% if weather_data %}
+        <h2>{{city}}天气信息 - {{ weather_data.realtime.info }}</h2>
+        <p>温度: {{ weather_data.realtime.temperature }}摄制度</p>
+        <p>描述: {{ weather_data.realtime.direct }}</p>
+        <!-- 根据你的天气 API 返回的数据添加更多信息 -->
+    {% endif %}
+</body>
+</html>
